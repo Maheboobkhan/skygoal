@@ -347,12 +347,8 @@ width: 60%;
 .card-container {
   position: relative;
   display: flex;
-  /* flex-wrap: nowrap;
-  justify-content: end; */
-  /* position: absolute; */
   right: -300px;
-  /* left: 300px; */
-  overflow-x: hidden;
+  overflow-x: auto;
   padding-bottom: 40px;
 }
 
@@ -757,6 +753,7 @@ width: 60%;
   background: #EBEBEB;
   width: 8%;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .num{
@@ -780,6 +777,15 @@ width: 60%;
   background: #EBEBEB;
   width: 8%;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.inc:hover{
+  background-color: #999;
+}
+
+.dec:hover{
+  background-color: #999;
 }
 
 .sixthcomp-book-btn{
@@ -792,7 +798,13 @@ width: 60%;
   border: none;
   color: #FFFFFF;
   margin-top: 50px;
+  cursor: pointer;
 }
+
+.sixthcomp-book-btn:hover{
+  background-color: #999;
+}
+
 
 .input12-container {
   width: 100%;
@@ -902,6 +914,14 @@ width: 60%;
   /* 137.5% */
 }
 
+li{
+  cursor: pointer;
+}
+
+li:hover{
+  color: #999;
+}
+
 /* eighth component */
 /* eighth component */
 /* eighth component */
@@ -979,7 +999,7 @@ width: 60%;
 }
 
 /* media query */
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
   .card-container{
     margin: auto;
   }
@@ -1097,6 +1117,333 @@ width: 60%;
 
   .sixthcomp-2-para {
     /* margin: auto; */
+    /* text-align: center; */
+  /* } */
+/* } */
+
+
+
+
+
+
+
+/* Add your existing styles here */
+
+/* Tablet Styles */
+@media only screen and (max-width: 768px) {
+  /* navbar */
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-1,
+  .nav-2 {
+    width: 100%;
     text-align: center;
   }
+
+  .nav-1{
+    width: fit-content;
+  }
+
+  .nav-2{
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-btn {
+    margin-top: 10px;
+    /* Adjust as needed */
+  }
+
+  /* comp-1 */
+    .secondcomp-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 60px;
+    }
+  
+    .secondcomp-container-1,
+    .secondcomp-container-2 {
+      padding: 0;
+      width: 100%;
+    }
+  
+    .secondcomp-container-1-img {
+      display: block;
+      /* Show the image for smaller screens */
+      margin-top: 10px;
+    }
+  
+    .secondcomp-btn-1 {
+      margin-top: 10px;
+    }
+
+    .secondcomp-para-1, .secondcomp-typography-1, .secondcomp-student-1{
+      width: 100%;
+      text-align: center;
+    }
+
+    /* comp-2 */
+    .thirdcomp {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .thirdcomp-1{
+      width: 70%;
+    }
+
+    .thirdcomp-1-1 {
+      width: 100%;
+      flex: 1 0 100%;
+      /* Take full width on tablets */
+      margin: 10px 0;
+    }
+
+    .thirdcomp-1-head-para{
+      margin-left: 30px;
+    }
+
+    .thirdcomp-2{
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    /* comp-4 */
+    .card {
+      width: 70%;
+      padding: 20px;
+    }
+
+    .card-container {
+      width: 100%;
+      right: -10px;
+      overflow-x: scroll;
+    }
+
+    /* comp-5 */
+    .fifthcomp {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .fifthcomp-1{
+      width: 100%;
+      margin: auto;
+    }
+
+      .fifthcomp-2 {
+        width: 100%;
+        margin: auto;
+      }
+
+    .fifthcomp-1-content {
+      padding-left: 0;
+      /* Remove left padding on tablets */
+    }
+
+    /* comp-6 */
+    .sixthcomp {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sixthcomp-2{
+      width: 100%;
+      margin: auto;
+      margin-left: 20px;
+      padding-left: 20px;
+      margin-top: 20px;
+    }
+
+    .sixthcomp-2-form{
+      padding-left: 10px;
+    }
+
+    .sixthcomp-2 {
+      padding-left: 0;
+      /* Remove left padding on tablets */
+    }
+
+    /* comp-7 */
+    .seventhcomp-card {
+      width: 80%;
+      margin: auto;
+      margin-top: 60px;
+      /* Adjust the width of each card for tablet view */
+    }
+
+    /* comp-8 */
+
+    .eighthcomp{
+      width: 100%;
+    }
+    .eighthcomp-lists-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .eighthcomp-heading, .eighthcomp-para{
+      width: 100%;
+    }
+
+    .eighthcomp-lists2 {
+      width: 100%;
+      margin-top: 50px;
+      display: flex;
+      /* Reset margin for tablets */
+    }
+
+    .eighthcomp-lists1 {
+      width: 100%;
+      margin-top: 0;
+      display: flex;
+      /* Reset margin for tablets */
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 480px) {
+  /* navbar */
+  .nav {
+    padding: 10px;
+  }
+
+  .nav-1,
+  .nav-2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-1{
+    width: fit-content;
+    margin-left: 40%;
+  }
+
+  .nav-1 li{
+    font-size: 12px;
+  }
+
+  .nav-2{
+    margin-left: 30%;
+  }
+
+  .nav-btn {
+    margin-top: 10px;
+    /* Adjust as needed */
+  }
+
+  /* comp-1 */
+  .secondcomp-container{
+    width: 100%;
+    padding-right: 100px;
+  }
+
+  /* comp-2 */
+  .thirdcomp-1-1 {
+    flex: 1 0 100%;
+    margin: 10px 0;
+    margin: 10px 0;
+  }
+
+  .thirdcomp-1{
+    padding-left: 120px;
+  }
+
+  .thirdcomp-2 {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 120px;
+    padding: 0 30px;
+  }
+
+  /* comp-4 */
+    .card {
+      width: 40%;
+    }
+
+    .card-container{
+      width: 100%;
+      right: -10px;
+      overflow-x: scroll;
+    }
+
+    /* comp-5 */
+    .fifthcomp-1 {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .fifthcomp-2 {
+      width: 100%;
+      /* display: none; */
+      /* Hide the second part on mobile */
+    }
+
+    /* comp-6 */
+    .sixthcomp-1,
+    .sixthcomp-2 {
+      width: 100%;
+      /* Take full width on mobile */
+    }
+
+    .sixthcomp-2 {
+      width: 100%;
+      margin-left: 50px;
+      padding-left: 20px;
+      margin-top: 20px;
+    }
+
+    /* comp-7 */
+    .seventhcomp-card-container{
+      width: 150%;
+    }
+
+    .seventhcomp-card {
+      width: 90%;
+      margin-left: 100px;
+      margin-top: 60px;
+      /* Take full width on mobile */
+    }
+
+    .seventhcomp-heading{
+      margin-left: 40%;
+    }
+
+    /* comp-8 */
+    .eighthcomp {
+      width: 135%;
+    }
+    .eighthcomp-lists-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .eighthcomp-heading,
+    .eighthcomp-para {
+      width: 100%;
+    }
+
+    .eighthcomp-lists2 {
+      width: 100%;
+      margin: auto;
+      margin-top: 50px;
+      display: flex;
+      /* Reset margin for tablets */
+    }
+
+    .eighthcomp-lists1 {
+      width: 100%;
+      margin-top: auto;
+      margin-top: 0;
+      display: flex;
+      /* Reset margin for tablets */
+    }
 }
